@@ -1,0 +1,272 @@
+.canvas-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    /* max-width: 1040px; */
+    width: 100%;
+}
+.left-sidebar {
+    width: 90px;
+    background: white;
+    border-right: 1px solid #e1e5e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    gap: 12px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 60px);
+}
+
+.canvas-toolbar {
+    background: white;
+    border-bottom: 1px solid #e1e5e9;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.canvas-toolbar .icon-btn {
+    width: 36px;
+    height: 36px;
+}
+#canvas {
+    flex: 1;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    border: 1px solid #e1e5e9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.tool-icon.active{
+        border-color: #667eea;
+}
+.light .minus-btn,.light .plus-btn{
+        width: 30px;
+    height: 29px;
+    background: none;
+    border: 1px solid;
+    padding: 0;
+    border-radius: 0;
+}
+.dark .minus-btn,.dark .plus-btn{
+        width: 30px;
+    height: 30px;
+    background: #242121;
+    color: #fff;
+    border: 1px solid #e1e5e9;
+    padding: 0;
+    border-radius: 0;
+}
+.light .quantity-input{
+    width: 40px;
+    height: 30px;
+}
+.dark .quantity-input{
+    width: 40px;
+    height: 30px;
+    background: #242121;
+    color: #fff;
+    border: 1px solid #e1e5e9;
+}
+.color-button{
+    height: 30px;
+}
+.icon-btn .refresh{
+    width: 15px;
+}
+.canvas-grid{
+        display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.format-options{
+    display: flex;
+    gap: 15px;
+    align-items: center
+}
+.format-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.format-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.save-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #667eea;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ai-cleanup-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: auto;
+}
+.dark .left-sidebar{
+    background: #000;
+}
+
+.left-sidebar .tool-icon ,.canvas-toolbar .tool-icon{
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  min-height: 40px;
+  border: 1px solid #e1e5e9;
+  cursor: pointer;
+  
+}
+/* Default (light mode) */
+.light .left-sidebar .tool-icon.eraser {
+  background-image: url("../../assets/eraser.png");
+}
+.light .left-sidebar .tool-icon.brush {
+  background-image: url("../../assets/pen.png");
+}
+.light .left-sidebar .tool-icon.signature {
+  background-image: url("../../assets/signature.png");
+}.light .left-sidebar .tool-icon.square {
+  background-image: url("../../assets/square.png");
+}.light .left-sidebar .tool-icon.rectangle {
+  background-image: url("../../assets/rectangle.png");
+}.light .left-sidebar .tool-icon.circle {
+  background-image: url("../../assets/circle.png");
+}.light .left-sidebar .tool-icon.triangle {
+  background-image: url("../../assets/triangle.png");
+}.light .left-sidebar .tool-icon.line {
+  background-image: url("../../assets/line.png");
+}.light .left-sidebar .tool-icon.arrow {
+  background-image: url("../../assets/arrow.png");
+}.light .left-sidebar .tool-icon.text {
+  background-image: url("../../assets/text.png");
+}
+
+.light .canvas-toolbar .tool-icon.undoImg {
+  background-image: url("../../assets/undoImg.png");
+}
+.light .canvas-toolbar .tool-icon.redoImg {
+  background-image: url("../../assets/redoImg.png");
+}
+.light .canvas-toolbar .tool-icon.refresh {
+  background-image: url("../../assets/refresh.png");
+}
+
+
+/* Dark mode */
+.dark .left-sidebar .tool-icon.eraser {
+  background-image: url("../../assets/darkeraser.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.brush {
+  background-image: url("../../assets/penLight.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.signature {
+  background-image: url("../../assets/darksignature.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.square {
+  background-image: url("../../assets/darksquare.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.rectangle {
+  background-image: url("../../assets/darkrectangle.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.circle {
+  background-image: url("../../assets/darkcircle.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.triangle {
+  background-image: url("../../assets/darktriangle.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.line {
+  background-image: url("../../assets/darkline.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.arrow {
+  background-image: url("../../assets/darkarrow.png");
+  background-color: #242121;
+}
+.dark .left-sidebar .tool-icon.text {
+  background-image: url("../../assets/darktext.png");
+  background-color: #242121;
+}
+
+
+.dark .canvas-toolbar .tool-icon.undoImg {
+  background-image: url("../../assets/darkundoImg.png");
+  background-color: #242121;
+}
+.dark .canvas-toolbar .tool-icon.redoImg {
+  background-image: url("../../assets/darkredoImg.png");
+  background-color: #242121;
+}
+.dark .canvas-toolbar .tool-icon.refresh {
+  background-image: url("../../assets/darkrefresh.png");
+  background-color: #242121;
+}
+
+
+.dark .canvas-container{
+      background-color: #242121;
+
+}
+.dark .canvas-toolbar{
+    background: #000;
+}
+
+/* Rectangle */
+.cursor-rect {
+  cursor: crosshair;
+}
+.cursor-square {
+  cursor: crosshair;
+}
+/* Circle */
+.cursor-circle {
+  cursor: crosshair;
+}
+
+/* Triangle */
+.cursor-triangle {
+  cursor: crosshair;
+}
+
+.tool-icon.active{
+  box-shadow: 3px 2px 10px #667eea;
+}
+
+.dark .format-btn.active{
+  background: #007bff;
+
+}
+.dark .format-btn{
+  background: #000;
+  color: #fff;
+}

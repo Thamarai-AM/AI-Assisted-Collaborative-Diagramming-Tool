@@ -1,0 +1,145 @@
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+ .userProf{
+    width: 30px;
+  height: 30px;
+  background-image: url("../../assets/userProf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+
+ }
+ .logout-icon{
+    width: 30px;
+  height: 30px;
+  background-image: url("../../assets/exit-door.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+ }
+.logo {
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/favicon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;   
+}
+.app-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.share-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+}
+.profile-container {
+    position: relative;
+}
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #667eea;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+.profile-dropdown.show {
+    display: block;
+}
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1000;
+    display: none;
+}
+.dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2d3748;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+}
+.header {
+    background: white;
+    border-bottom: 1px solid #e1e5e9;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.dropdown-toggle::after{
+    display: none
+}
+.icon-btn img{
+    width: 20px;
+}
+.refreshBtn img{
+    width: 15px;
+}
+
+.dark .icon-btn{
+    background: #000;
+}
+.dark .header{
+    background: #000;
+    border-bottom: 1px solid #5a5858;
+}
+.dark .profile-dropdown{
+        border: 1px solid #5a5858;
+}
+.dark .app-title{
+    color: #fff;
+}

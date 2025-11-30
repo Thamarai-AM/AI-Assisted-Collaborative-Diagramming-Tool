@@ -1,0 +1,83 @@
+
+.w-30{
+  width: 30px;
+}
+.t-right{
+  text-align: right;
+}
+p{
+  color: #000;
+}
+.p-0{
+  padding: 0;
+}
+ h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: left;
+  color: #000;
+}
+ h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+ h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 190px;
+  background-color: #333;
+}
+.login h1:after{
+  max-width: 80px;
+}
+.login h1:before{
+  width: 40px;
+}
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.refresh {
+  width: 40px; 
+  height: auto;
+}
+body.dark .dashboard-header{
+    background-color: #000;
+    border-bottom: 2px solid #f4f5f5;
+}
+.dark .dash{
+  box-shadow: 1px 0px 6px #fff;
+}
+.dark .refresh{
+  background: #000;
+}
+.dark .dropdown-menu.show{
+  background: #000;
+  color: #fff;
+}
+.dark .dropdown-item{
+  background: #000;
+  color: #fff;
+}
+.dark label{
+  color: #000;
+}
